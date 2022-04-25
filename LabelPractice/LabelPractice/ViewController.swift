@@ -13,13 +13,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var myButton: UIButton!
     
     @IBOutlet weak var myLabel: UILabel!
-    
+    @IBOutlet weak var myLabel2: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         myLabel.text = "Maf, Dubai and India,Maf, Dubai and India,Maf, Dubai and India,Maf, Dubai and India"
+        
+        
+        let myAttributedString = NSMutableAttributedString.init(string: "This is lime")
+        
+        let range = NSString(string: "This is lime").range(of: "lime", options: String.CompareOptions.caseInsensitive)
+        
+        myAttributedString.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.green], range: range)
+        
+        myLabel2.attributedText = myAttributedString
+        
+        
         
 //        myLabel.font = UIFont.systemFont(ofSize: 20)
         
@@ -46,7 +57,7 @@ class ViewController: UIViewController {
 //        myLabel.lineBreakMode = NSLineBreakMode.byTruncatingHead
         //Truncate from starting
         
-        myLabel.lineBreakMode = NSLineBreakMode.byTruncatingTail
+//        myLabel.lineBreakMode = NSLineBreakMode.byTruncatingTail
         //truncate from left
         
 //        myLabel.lineBreakMode = NSLineBreakMode.byTruncatingMiddle
@@ -87,7 +98,7 @@ class ViewController: UIViewController {
         //Set the value of this property to true to enable the control or false to disable it. An enabled control is capable of responding to user interactions, whereas a disabled control ignores touch events and may draw itself differently.
     
         
-        myLabel.numberOfLines = 5
+        myLabel.numberOfLines = 6
         //This property controls the maximum number of lines to use in order to fit the label’s text into its bounding rectangle. The default value for this property is 1. To remove any maximum limit, and use as many lines as needed, set the value of this property to 0.
         
 //        myLabel.textAlignment = NSTextAlignment.justified

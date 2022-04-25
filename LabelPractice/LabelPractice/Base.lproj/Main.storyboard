@@ -17,7 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaF-qZ-iSR">
-                                <rect key="frame" x="89" y="152" width="256" height="67"/>
+                                <rect key="frame" x="89" y="152" width="256" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpd-wH-bDt">
+                                <rect key="frame" x="89" y="678" width="256" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -29,6 +36,7 @@
                     </view>
                     <connections>
                         <outlet property="myLabel" destination="uaF-qZ-iSR" id="So1-GB-O3d"/>
+                        <outlet property="myLabel2" destination="qpd-wH-bDt" id="iBU-5i-Dce"/>
                         <outletCollection property="myLabel" destination="uaF-qZ-iSR" id="Igp-V9-tEm"/>
                     </connections>
                 </viewController>
