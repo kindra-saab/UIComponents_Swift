@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         
         //When button is on,
         //Then this property changes its background colour
-        mySwitch.onTintColor = .yellow
+//        mySwitch.onTintColor = .clear
         
         //The colour of the button itself.
-        mySwitch.thumbTintColor = .orange
+//        mySwitch.thumbTintColor = .orange
         
         //No effect of this property after ios7.
         mySwitch.onImage = UIImage(named: "high_volume")
